@@ -1,0 +1,26 @@
+<p>calculatrice works!</p>
+
+Entrez votre calcul : <br>
+<input type="number" [(ngModel)]="numberOne"/><br>
+<input type="number" [(ngModel)]="numberTwo"/>
+<button (click)="Addition()">+</button>
+<button (click)="Soustraction()">-</button>
+<button (click)="Multiplication()">*</button>
+<button (click)="Division()">/</button><br>
+
+<p *ngIf="addition">
+  Total = {{ numberOne + numberTwo}}
+</p>
+
+<p *ngIf="soustraction">
+  Total = {{ numberOne - numberTwo}}
+</p>
+
+<p *ngIf="multiplication">
+  Total = {{ numberOne * numberTwo}}
+</p>
+
+<p *ngIf="division">
+  Total = {{ numberOne / numberTwo}}
+</p>
+
